@@ -5,3 +5,6 @@
 - Harrison Witt
 - Chase Cha
 - Heywood Williams-Tracy
+- Timothy Yeh
+- Adam Chow
+- Neel Davuluri
