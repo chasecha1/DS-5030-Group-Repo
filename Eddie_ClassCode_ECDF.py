@@ -1,5 +1,5 @@
-
-#COMPUTE ECDF
+# Eddie Anderson ECDF Class Exercise
+# Author: Edward Anderson (eca4zm)
 
 import numpy as np
 import matplotlib.pyplot as plt
