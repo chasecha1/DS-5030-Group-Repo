@@ -1,3 +1,7 @@
 # DS-5030-Group-Repo
 
-Heywood Williams-Tracy (@heywoodwt)
+#GROUP MEMBERS
+- Eddie Anderson
+- Harrison Witt
+- Chase Cha
+- Heywood Williams-Tracy
