@@ -5,8 +5,29 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-data = np.random.random(200)
+data = np.array([1,2,2,3,3,3,4,4,4,4, 5])
 df = pd.DataFrame(data, columns=['Dummy Data'])
+
+# Empirical Cumulative Distribution Function Work
+Z = np.sort(df['Dummy Data'].unique())
+X = df['Dummy Data'].to_numpy().reshape(-1,1)
+comparison = X <= Z
+ecdf = np.mean(comparison, axis=0)
+plt.plot(Z, ecdf)
+plt.title('Empirical CDF with dummy data')
+plt.ylabel('Proportion')
+plt.xlabel('Dummy Data')
+
+
+# Median Work
+QUANTILE = .5
+squared_distance = (ecdf - QUANTILE) ** 2 # Looking at the distance from the input quantile
+min_index = np.where(squared_distance == squared_distance.min()) # getting the index of that quantile
+print(Z[min_index])
+median = np.mean(Z[min_index])
+print('Median:', median)
+
+
 
 
 def ecdf(x, plot = True):
